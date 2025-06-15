@@ -1,0 +1,22 @@
+{
+    "name": "PDDL Planning Environment",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "planutils",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "jan-dolejsi.pddl",
+                "ms-python.python",
+                "ms-azuretools.vscode-docker"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "python.defaultInterpreterPath": "/usr/bin/python3"
+            }
+        }
+    },
+    "forwardPorts": [],
+    "postCreateCommand": "planutils --help",
+    "remoteUser": "root"
+} 

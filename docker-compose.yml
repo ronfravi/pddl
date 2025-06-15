@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  planutils:
+    image: aiplanning/planutils:latest
+    container_name: pddl_planutils
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    tty: true
+    stdin_open: true 
