@@ -1,0 +1,151 @@
+=== COMANDO EJECUTADO ===
+planutils run dual-bfws-fdparser ../files/barman_domain.pddl ../files/barman_problem.pddl
+
+=== SALIDA ESTÁNDAR (stdout) ===
+Domain: ../files/barman_domain.pddl Problem: ../files/barman_problem.pddl
+Parsing...
+Parsing: [0.000s CPU, 0.004s wall-clock]
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.010s wall-clock]
+Preparing model... [0.010s CPU, 0.003s wall-clock]
+Generated 115 rules.
+Computing model... [0.040s CPU, 0.047s wall-clock]
+3296 relevant atoms
+3425 auxiliary atoms
+6721 final queue length
+11595 total queue pushes
+Completing instantiation... [0.100s CPU, 0.098s wall-clock]
+goal relaxed reachable: True
+387 atoms
+Computing fact groups...
+Finding invariants...
+24 initial candidates
+Time limit reached, aborting invariant generation
+Finding invariants: [0.010s CPU, 0.003s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+387 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.010s CPU, 0.007s wall-clock]
+0 negated fluents created
+
+ Match tree built with 2728 nodes.
+
+PDDL problem description loaded: 
+	Domain: barman
+	Problem: prob
+	#Actions: 2728
+	#Fluents: 387
+Goals found: 14
+Goals_Edges found: 14
+Starting search with 1-BFWS...
+--[14 / 0]--
+--[14 / 1]--
+--[13 / 0]--
+--[13 / 3]--
+--[13 / 4]--
+--[13 / 5]--
+--[13 / 6]--
+--[13 / 7]--
+--[13 / 8]--
+--[13 / 9]--
+--[13 / 10]--
+--[13 / 11]--
+--[13 / 12]--
+--[13 / 13]--
+Total time: 0.017927
+Nodes generated during search: 2475
+Nodes expanded during search: 2449
+Plan found with cost: NOTFOUND
+Fast-BFS search completed in 0.017927 secs
+Starting search with BFWS(novel,land,h_ff)...
+Landmarks found: 31
+Landmarks_Edges found: 91
+--[91 / 4294967295]--
+--[91 / 444]--
+--[91 / 405]--
+--[91 / 262]--
+--[91 / 261]--
+--[90 / 261]--
+--[90 / 175]--
+--[89 / 175]--
+--[89 / 143]--
+--[88 / 143]--
+--[88 / 142]--
+--[87 / 142]--
+--[87 / 133]--
+--[87 / 105]--
+--[84 / 105]--
+--[81 / 105]--
+--[78 / 105]--
+--[78 / 93]--
+--[77 / 93]--
+--[74 / 93]--
+--[71 / 93]--
+--[68 / 93]--
+--[68 / 85]--
+--[67 / 85]--
+--[67 / 67]--
+--[64 / 67]--
+--[61 / 67]--
+--[60 / 67]--
+--[60 / 60]--
+--[57 / 60]--
+--[54 / 60]--
+--[53 / 60]--
+--[53 / 55]--
+--[50 / 55]--
+--[47 / 55]--
+--[46 / 55]--
+--[43 / 55]--
+--[40 / 55]--
+--[39 / 55]--
+--[39 / 41]--
+--[36 / 41]--
+--[33 / 41]--
+--[32 / 41]--
+--[29 / 41]--
+--[29 / 39]--
+--[26 / 39]--
+--[26 / 31]--
+--[25 / 31]--
+--[25 / 27]--
+--[21 / 27]--
+--[18 / 27]--
+--[18 / 23]--
+--[18 / 22]--
+--[18 / 21]--
+--[17 / 21]--
+--[17 / 14]--
+--[13 / 14]--
+--[10 / 14]--
+--[10 / 13]--
+--[10 / 12]--
+--[10 / 10]--
+--[10 / 9]--
+--[10 / 8]--
+--[9 / 8]--
+--[9 / 5]--
+--[9 / 3]--
+--[3 / 3]--
+--[3 / 2]--
+--[3 / 1]--
+--[3 / 0]--
+--[0 / 0]--
+Total time: 35.6836
+Nodes generated during search: 146126
+Nodes expanded during search: 18746
+Plan found with cost: 215
+BFS search completed in 35.6836 secs
+Axioms 0
+Deterministic 2728 actions
+Invariants 387
+
+=== ERRORES (stderr) ===
+
+=== CÓDIGO DE RETORNO ===
+0
